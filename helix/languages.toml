@@ -1,0 +1,2 @@
+[language-server.clangd]
+config = { fallbackFlags = ["-std=c++20"] }

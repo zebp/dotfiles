@@ -1,0 +1,35 @@
+[helpers]
+
+#
+# Shell
+#
+[zsh.files]
+"zsh/ohmyzsh" = { target = "~/.oh-my-zsh", type = "symbolic" }
+"zsh/zeb.zsh-theme" = "~/.oh-my-zsh/custom/themes/zeb.zsh-theme"
+"zsh/zshrc" = "~/.zshrc"
+
+
+#
+# Nifty utilities
+#
+[bottom.files]
+"bottom" = "~/.config/bottom"
+
+#
+# Terminal emulators
+#
+[wezterm.files]
+"wezterm/config" = "~/.config/wezterm"
+"wezterm/wezterm.lua" = "~/.wezterm.lua"
+
+#
+# Text editors
+#
+[helix.files]
+"helix" = "~/.config/helix"
+
+[nvim.files]
+"nvim" = "~/.config/nvim"
+
+[default]
+depends = ["bottom", "helix", "nvim", "zsh"]

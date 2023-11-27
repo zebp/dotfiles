@@ -1,0 +1,6 @@
+# Machine specific configs
+.dotter/local.toml
+
+# Cache
+.dotter/cache.toml
+.dotter/cache/

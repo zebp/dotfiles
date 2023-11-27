@@ -1,0 +1,49 @@
+typeset -AHg FX FG BG
+
+export PATH=$HOME/.yarn/bin/:$PATH
+export PATH=/home/zeb/.local/bin:$PATH
+
+# Aliases for commonly used programss
+alias nv="nvim"
+alias ls="exa"
+
+# Oh My Zsh configuration
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="zeb"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+export PATH=$HOME/.fnm:$PATH
+eval "`fnm env`"
+
+# Deno
+export DENO_INSTALL="/home/zeb/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/zeb/.bun/_bun" ] && source "/home/zeb/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/zeb/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+# Wasmer
+export WASMER_DIR="/home/zeb/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+export NODE_NO_WARNINGS=1
+
+# Helix
+export EDITOR=hx
+export HELIX_RUNTIME="/home/zeb/dev/rust/helix/runtime"
+
+# Zig
+export PATH=$PATH:~/.zig/

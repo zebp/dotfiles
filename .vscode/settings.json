@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
+    "Lua.diagnostics.disable": [
+        "deprecated",
+        "unused-function",
+        "param-type-mismatch"
+    ]
+}

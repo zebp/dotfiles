@@ -1,0 +1,5 @@
+[flags]
+hide_avg_cpu = false
+color = "gruvbox"
+mem_as_value = true
+tree = true
