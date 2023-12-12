@@ -1,3 +1,5 @@
+export DISABLE_AUTO_UPDATE=true
+
 typeset -AHg FX FG BG
 
 export PATH=$HOME/.yarn/bin/:$PATH
@@ -47,3 +49,6 @@ export HELIX_RUNTIME="/home/zeb/dev/rust/helix/runtime"
 
 # Zig
 export PATH=$PATH:~/.zig/
+
+# Go
+export PATH=$PATH:~/go/bin
