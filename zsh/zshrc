@@ -19,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # fnm
+export PATH="/home/zeb/.local/share/fnm:$PATH"
 export PATH=$HOME/.fnm:$PATH
 eval "`fnm env`"
 
